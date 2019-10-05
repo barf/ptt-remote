@@ -1,6 +1,6 @@
 # About
 PTT button network remote-control for VATSIM audio
-by barf <stuart@macintosh>
+by barf <stuart@macintosh.nz>
 
 # Requirements
 * Windows PC/VM running Audio for VATSIM client
