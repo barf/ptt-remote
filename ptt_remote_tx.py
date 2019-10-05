@@ -18,7 +18,7 @@ DEBUG = False
 if DEBUG: from IPython import embed
 
 if __name__=='__main__':
-    parser = argparse.ArgumentParser(description='VATSIM flight plan CLI tool*', epilog=' * unofficial, developer is not associated with VATSIM')
+    parser = argparse.ArgumentParser(description='Push-to-talk remote control by barf <stuart@macintosh.nz>')
     parser.add_argument('HOST', help='FQDN or IP address of PTT remote RX host')
     parser.add_argument('PORT', help='port number of PTT remote RX host')
 
