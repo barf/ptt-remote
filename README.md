@@ -10,8 +10,8 @@ by barf <stuart@macintosh.nz>
   * Install [vJoystick](https://sourceforge.net/projects/vjoystick/)
 * Windows/GNU/Linux/Mac simulator with yoke/stick/PTT button attached
   * Requires Python 3
-    * uses Python module `python -m pip install pygame`
-    * uses Python module `python -m pip install zmq`
+    * Install Python module PyGame `python -m pip install pygame`
+    * Install Python module ZeroMQ `python -m pip install zmq`
 
 # Usage
 On the Windows PC/VM running the Audio for VATSIM client:
