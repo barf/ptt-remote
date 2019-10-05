@@ -5,8 +5,13 @@ by barf <stuart@macintosh.nz>
 # Requirements
 * Windows PC/VM running Audio for VATSIM client
   * Install [Python 3](https://www.python.org/downloads/windows/)
+    * Install Python module ZeroMQ `python -m pip install zmq`
+    * Install Python module Numpy `python -m pip install numpy`
   * Install [vJoystick](https://sourceforge.net/projects/vjoystick/)
-* GNU/Linux/Mac simulator with yoke/stick/PTT button attached
+* Windows/GNU/Linux/Mac simulator with yoke/stick/PTT button attached
+  * Requires Python 3
+    * uses Python module `python -m pip install pygame`
+    * uses Python module `python -m pip install zmq`
 
 # Usage
 On the Windows PC/VM running the Audio for VATSIM client:
