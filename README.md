@@ -18,9 +18,13 @@ On the Windows PC/VM running the Audio for VATSIM client:
 1. Install Python 3 and vJoystick.
 1. Attach your headset, or patch/route the audio.
 1. Run (double-click on) `ptt_remote_rx.py`
+1. Allow receiving on port TCP/5555 in the Windows firewall. The default port can be changed by editing the `ptt_remote_rx.py` file.
 
 On the simulator box with PTT button:
-1. Execute `ptt_remote_tx.py <host> <port>` with the TCP/IP address (or FQDN) and port of the host running `ptt_remote_rx.py`.
+1. Execute `ptt_remote_tx.py <host> <port>` with the TCP/IP address (or FQDN) and port of the host running `ptt_remote_rx.py`. The default port is 5555.
 
 The buttons on USB HID devices attached to the simulator should now be mapped to the first virtual joystick device. 
 To test if buttons are being mapped use the vJoystick `JoyMonitor.exe` tool.
+
+If there is no connection, you may need to add an exception to the Windows Firewall: 
+https://blogs.msdn.microsoft.com/mandi/2014/11/03/how-to-create-a-windows-firewall-inbound-rule/
