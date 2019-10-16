@@ -34,6 +34,7 @@ if __name__=='__main__':
     print("Connected")
 
     pygame.init()
+    clock = pygame.time.Clock()
 
     joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_count())]
     for stick in joysticks:
@@ -56,6 +57,9 @@ if __name__=='__main__':
                 socket.send(pickle.dumps([event.type, event.dict, time.time()]))
 
             if DEBUG: print('type: %s\tdict: %s' % (event.type, event.dict))
+
+        # time.sleep(10)
+        clock.tick(30)
 
     # if DEBUG: embed()
     pygame.quit()

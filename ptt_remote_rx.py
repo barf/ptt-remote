@@ -3,6 +3,7 @@
 # Python PTT remote (TX) by barf <stuart@macintosh>
 #
 
+import os
 import array
 import time
 import pickle
